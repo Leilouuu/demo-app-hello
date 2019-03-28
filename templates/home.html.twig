@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello La France | {{ parent() }} {% endblock %}
+{% block body %}
+    <div class="flex-center full-height">
+        <div class="content">
+            <img src="{{ asset('/img/france-flag.png') }}" alt="Drapeau de la France"/>
+            <h1 class="title">Hello la France</h1>
+            <p>🕐 Il est maintenant {{ 'now'|date('H:i', 'Europe/Paris') }}</p>
+            <hr/>
+            <p>&copy; Copyright 2018-2019</p>
+        </div>
+    </div>
+{% endblock %}
